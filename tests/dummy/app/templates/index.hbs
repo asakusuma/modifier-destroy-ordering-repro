@@ -1,0 +1,13 @@
+{{#if this.showButton}}
+  <button
+    id="show-hide-trigger"
+    {{on "click" this.hide}}
+    {{click-callback callback=this.myCallback}}
+  >
+    Click me
+  </button>
+{{/if}}
+
+<div>
+  Click count: {{this.clickCount}}
+</div>
